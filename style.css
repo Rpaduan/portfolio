@@ -73,5 +73,6 @@ header {
 .light-dark {
    background: none;
    border: none;
+   cursor: pointer;
 }
 
