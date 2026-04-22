@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor1: #5BC0EB;
+    --cor2: #4A90E2;
+    --cor3: #7B61FF;
+    --cor4: #5A3FD0;
+    --cor5: #0B0B14; 
+    --cor6: #ffffff;
+    --fonte1: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background:  var(--cor5);
+    min-height: 100vh;
+}
+
+header {
+    width: 100vw;
+    height: 80px;
+    border-bottom: 1px solid var(--cor6);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.rp {
+    height: 60px;
+    margin-left: 25px;
+    padding-top: 5px;
+}
+
+.nome {
+    height: 20px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--cor6);
+    font-family: var(--fonte1);
+    font-weight: bold;
+    padding: 0 50px;
+    transition: 0.5s;
+}
+
+.links a:hover {
+    color: var(--cor1);
+    text-decoration: underline;
+    text-underline-offset: 31px;
+    text-decoration-thickness: 3px;
+}
+
+.fa-sun {
+    font-size: 20px;
+    color: var(--cor6);
+}
+
+.light-dark {
+   background: none;
+   border: none;
+}
+
