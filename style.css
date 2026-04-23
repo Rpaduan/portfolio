@@ -22,12 +22,15 @@ body {
 }
 
 header {
+    position: fixed;
+    backdrop-filter: blur(5px);
     width: 100vw;
     height: 70px;
     border-bottom: 1px solid var(--cor3);
     display: flex;
     justify-content: space-between;
     box-shadow: 0 0 15px var(--cor4);
+    z-index: 99;
 }
 
 .logo {
@@ -101,12 +104,15 @@ header {
 .hero {
     display: block;
     color: var(--cor6);
-    text-align: center;    
+    text-align: center;
+    border-bottom: 1px solid var(--cor3); 
+    box-shadow: 0 0 15px var(--cor4);
+    padding-bottom: 100px;   
 }
 
 .logo__hero {
     width: 780px;
-    margin-top: 80px;
+    margin-top: 150px;
     transition: 1s;
 }
 
@@ -126,22 +132,21 @@ h1 {
 }
 
 .link-projetos, .link-contato {
+    width: 200px;
+    height: 55px;
+    padding: 1em;
+    display: inline-block;
+    border-radius: 8px;
     font-size: 18px;
+    box-shadow: 0 0 0 3px transparent;
     text-decoration: none;
     color: var(--cor6);
-    margin: 0 20px;*/
+    margin: 0 20px;
+    transition: 0.5s;
 }
 
 .link-projetos {
-    width: 200px;
-    height: 55px;
     background: linear-gradient(145deg, var(--cor4), var(--cor1));
-    padding: 1em;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 0 0 3px transparent;
-    display: inline-block;
-    transition: 0.5s;
 }
 
 .link-projetos:hover {
@@ -149,17 +154,18 @@ h1 {
 }
 
 .link-contato {
-    width: 200px;
-    height: 55px;
-    padding: 1em;
-    border: 3px solid var(--cor4);
-    border-radius: 8px;
-    box-shadow: 0 0 0 0 var(--cor4);
-    display: inline-block;
+    box-shadow: inset 0 0 0 3px var(--cor4);
+    transition: 0.5s;
+}
+
+.link-contato:hover {
+    box-shadow: 0 0 0 3px var(--cor3), 0 0 8px 8px var(--cor1);
 }
 
 
-
+.loren {
+    font-size: 40px;
+}
 
 
 
