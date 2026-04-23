@@ -155,16 +155,16 @@ h1 {
 
 .link-contato {
     box-shadow: inset 0 0 0 3px var(--cor4);
-    transition: 0.5s;
 }
 
 .link-contato:hover {
-    box-shadow: 0 0 0 3px var(--cor3), 0 0 8px 8px var(--cor1);
+    box-shadow: inset 0 0 0 3px var(--cor1), 0 0 8px 8px var(--cor4);
 }
 
 
 .loren {
     font-size: 40px;
+    color: aliceblue;
 }
 
 
