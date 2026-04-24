@@ -104,11 +104,15 @@ header {
 
 .hero {
     display: block;
+    background: var(--cor5);
     color: var(--cor6);
     text-align: center;
     border-bottom: 1px solid var(--cor3); 
     box-shadow: 0 0 15px var(--cor4);
-    padding-bottom: 100px; 
+    padding-bottom: 100px;
+    background-color: ;
+    position: relative;
+    z-index: 98; 
 }
 
 .logo__hero {
