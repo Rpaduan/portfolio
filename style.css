@@ -28,9 +28,9 @@ header {
     width: 100vw;
     height: 70px;
     border-bottom: 1px solid var(--cor3);
+    box-shadow: 0 0 15px var(--cor4);
     display: flex;
     justify-content: space-between;
-    box-shadow: 0 0 15px var(--cor4);
     z-index: 99;
 }
 
@@ -108,7 +108,7 @@ header {
     text-align: center;
     border-bottom: 1px solid var(--cor3); 
     box-shadow: 0 0 15px var(--cor4);
-    padding-bottom: 100px;   
+    padding-bottom: 100px; 
 }
 
 .logo__hero {
@@ -124,11 +124,6 @@ header {
 h1 {
     margin-bottom: 30px;
     font-size: 28px;
-    background: linear-gradient(270deg, var(--cor1), var(--cor4));
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradientMove 5s ease infinite;
 }
 
 .hero__p {
@@ -161,6 +156,10 @@ h1 {
     box-shadow: 0 0 0 3px var(--cor5), 0 0 8px 8px var(--cor4);
 }
 
+.link-projetos:active, .link-contato:active  {
+    transform: scale(0.95);
+}
+
 .link-contato {
     box-shadow: inset 0 0 0 3px var(--cor4);
     background: linear-gradient(270deg, var(--cor5), var(--cor3));
@@ -173,9 +172,15 @@ h1 {
 }
 
 .sobre {
+    border-bottom: 1px solid var(--cor3);
+    box-shadow: 0 0 15px var(--cor4);
+}
+
+.container {
     display: flex;
     max-width: 1500px;
     margin: auto;
+    
 }
 
 .imagem {
@@ -222,6 +227,11 @@ h2 {
 .fa-solid {
     font-size: 40px;
     padding: 20px 0;
+}
+
+
+/*animação gradiente padrão*/
+h1, .fa-solid {
     background: linear-gradient(270deg, var(--cor1), var(--cor4));
     background-size: 200% 200%;
     -webkit-background-clip: text;
