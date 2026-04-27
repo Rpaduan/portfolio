@@ -28,8 +28,6 @@ header {
     backdrop-filter: blur(5px);
     width: 100vw;
     height: 70px;
-    border-bottom: 1px solid var(--cor3);
-    box-shadow: 0 0 15px var(--cor4);
     display: flex;
     justify-content: space-between;
     z-index: 99;
@@ -178,12 +176,8 @@ h1 {
     box-shadow: inset 0 0 0 3px var(--cor5), 0 0 8px 8px var(--cor4);
 }
 
-.sobre {
-    border-bottom: 1px solid var(--cor3);
-    box-shadow: 0 0 15px var(--cor4);
-}
-
-.container {
+.container,
+.cards {
     display: flex;
     max-width: 1300px;
     margin: auto;
@@ -239,7 +233,7 @@ h3 {
     margin-bottom: 20px;
 }
 
-.sobre__nome {
+.destaque {
     background: linear-gradient(to right, var(--cor1), var(--cor4) 60%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -268,7 +262,10 @@ h3 {
     padding-right: 50px;
 }
 
-.fa-solid {
+.fa-bullseye,
+.fa-bolt,
+.fa-code,
+.fa-user-group {
     font-size: 40px;
     padding: 10px 0 30px 0;
 }
@@ -282,10 +279,25 @@ h3 {
     line-height: 1.6
 }
 
+.card__imagem {
+    max-width: 400px;
+    position: relative;
+}
+
+.secundaria,
+header {
+    border-bottom: 1px solid var(--cor3);
+    box-shadow: 0 0 15px var(--cor4);
+}
+
+
 
 /*animação gradiente padrão*/
 h1,
-.fa-solid {
+.fa-bullseye,
+.fa-bolt,
+.fa-code,
+.fa-user-group {
     background: linear-gradient(270deg, var(--cor1), var(--cor4));
     background-size: 200% 200%;
     background-clip: text;
