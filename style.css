@@ -39,32 +39,32 @@ header {
     z-index: 99;
 }
 
-.logo {
+.header__logo {
     width: 90rem;
     display: flex;
     align-items: center;
 }
 
-.rp {
+.header__rp {
     height: 6rem;
     margin-left: 4.5rem;
     padding-top: 0.5rem;
     transition: 0.5s;
 }
 
-.nome {
+.header__nome {
     height: 2rem;
     transition: 0.5s;
 }
 
 @media (hover: hover) {
-    .rp:hover,
-    .nome:hover {
+    .header__rp:hover,
+    .header__nome:hover {
         filter: drop-shadow(0 0 5px var(--cor4));
     }
 }
 
-.links {
+.header__links {
     width: 90rem;
     display: flex;
     justify-content: space-between;
@@ -72,7 +72,7 @@ header {
     margin-right: 5.5rem;
 }
 
-.links a {
+.header__links a {
     color: var(--cor6);
     font-weight: bold;
     text-decoration: underline;
@@ -83,13 +83,13 @@ header {
 }
 
 @media (hover: hover) {
-    .links a:hover {
+    .header__links a:hover {
         color: var(--cor1);
         text-decoration-color: var(--cor3);
     }
 }
 
-.light-dark {
+.header__light-dark {
     background: none;
     border: none;
     cursor: pointer;
@@ -126,7 +126,7 @@ header {
     z-index: 98;
 }
 
-.logo__hero {
+.hero__logo {
     width: 78rem;
     margin-top: 15rem;
     transition: 1s;
@@ -138,7 +138,7 @@ header {
     }
 }
 
-h1 {
+.hero__h1 {
     margin-bottom: 3rem;
     font-size: 2.8rem;
 }
@@ -151,6 +151,7 @@ h1 {
 
 .botao-primario,
 .botao-secundario {
+    text-align: center;
     width: 20rem;
     height: 5.5rem;
     padding: 1em;
@@ -197,30 +198,30 @@ h1 {
 }
 
 .sobre {
-    padding: 3rem;
+    padding: 10rem 0;
     background: var(--cor5);
     position: relative;
     z-index: 97;
+    border: 1px solid red;
 }
 
-.container,
-.cards {
+.sobre__container {
     display: flex;
     max-width: 130rem;
     margin: auto;
 }
 
-.imagem {
+.sobre__imagem {
     width: 40rem;
     height: 50rem;
     align-items: center;
     justify-content: center;
-    margin: 8rem 10rem 8rem 0;
+    margin: 0 10rem 0 0;
     flex-shrink: 0;
     /*impede q a largura seja alterada msm estando definida devido ao display flex*/
 }
 
-.foto {
+.sobre__foto {
     width: 100%;
     height: 100%;
     border: 0.2rem solid transparent;
@@ -233,17 +234,15 @@ h1 {
 }
 
 @media (hover: hover) {
-     .foto:hover {
+     .sobre__foto:hover {
         box-shadow: -1rem -1rem 2rem var(--cor1);
     }   
 }
-
 
 .sobre__texto {
     max-height: 50rem;
     width: 100%;
     display: flex;
-    margin-top: 8rem;
     flex-direction: column;
 }
 
@@ -278,16 +277,16 @@ h3 {
     max-width: 55ch;
 }
 
-.icones {
+.sobre__icones {
     flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-.foco,
-.dedicacao,
-.desenvolvimento {
+.sobre__foco,
+.sobre__dedicacao,
+.sobre__desenvolvimento {
     border-right: 0.1rem solid var(--cor3);
     padding-right: 5rem;
 }
@@ -300,7 +299,7 @@ h3 {
     padding: 1rem 0 3rem 0;
 }
 
-.icones__h4 {
+.sobre__h4 {
     font-size: 1.8rem;
     margin-bottom: 1.2rem;
 }
@@ -310,9 +309,45 @@ h3 {
     font-size: 1.6rem;
 }
 
-.card__imagem {
-    max-width: 40rem;
+
+.projetos {
+    padding: 8rem;
+    background: var(--cor5);
     position: relative;
+    z-index: 96;
+}
+
+.projetos__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 130rem;
+    margin: auto;
+}
+
+.projetos__titulo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.projetos__botao {
+    display: flex;
+    align-items: center;
+}
+
+.botao-secundario:last-child {
+    margin: 0;
+}
+
+.projetos__card {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    border: 1px solid blue;
+}
+
+.projetos__item {
+    border: 1px solid red;
 }
 
 .sobre,
