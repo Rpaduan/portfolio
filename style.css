@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
 :root {
     --cor1: #5BC0EB;
     --cor2: #4A90E2;
@@ -24,45 +28,48 @@ body {
 }
 
 header {
+    font-size: 1.6rem;
     position: fixed;
     background: #0b0b1479;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(1rem);
     width: 100vw;
-    height: 70px;
+    height: 7rem;
     display: flex;
     justify-content: space-between;
     z-index: 99;
 }
 
 .logo {
-    width: 900px;
+    width: 90rem;
     display: flex;
     align-items: center;
 }
 
 .rp {
-    height: 60px;
-    margin-left: 45px;
-    padding-top: 5px;
+    height: 6rem;
+    margin-left: 4.5rem;
+    padding-top: 0.5rem;
     transition: 0.5s;
 }
 
 .nome {
-    height: 20px;
+    height: 2rem;
     transition: 0.5s;
 }
 
-.rp:hover,
-.nome:hover {
-    filter: drop-shadow(0 0 5px var(--cor4));
+@media (hover: hover) {
+    .rp:hover,
+    .nome:hover {
+        filter: drop-shadow(0 0 5px var(--cor4));
+    }
 }
 
 .links {
-    width: 900px;
+    width: 90rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 55px;
+    margin-right: 5.5rem;
 }
 
 .links a {
@@ -70,14 +77,16 @@ header {
     font-weight: bold;
     text-decoration: underline;
     text-decoration-color: transparent;
-    text-underline-offset: 28px;
-    text-decoration-thickness: 3px;
+    text-underline-offset: 2.8rem;
+    text-decoration-thickness: 0.3rem;
     transition: 0.5s;
 }
 
-.links a:hover {
-    color: var(--cor1);
-    text-decoration-color: var(--cor3);
+@media (hover: hover) {
+    .links a:hover {
+        color: var(--cor1);
+        text-decoration-color: var(--cor3);
+    }
 }
 
 .light-dark {
@@ -89,18 +98,20 @@ header {
 .fa-sun {
     text-decoration: underline;
     text-decoration-color: transparent;
-    text-underline-offset: 26px;
-    text-decoration-thickness: 3px;
-    font-size: 20px;
+    text-underline-offset: 2.6rem;
+    text-decoration-thickness: 0.3rem;
+    font-size: 2rem;
     color: var(--cor6);
     transition: 0.5s;
 }
 
-.fa-sun:hover {
-    color: var(--cor7);
-    text-underline-offset: 26px;
-    text-decoration-thickness: 3px;
-    text-decoration-color: var(--cor3);
+@media (hover: hover) {
+    .fa-sun:hover {
+        color: var(--cor7);
+        text-underline-offset: 2.6rem;
+        text-decoration-thickness: 0.3rem;
+        text-decoration-color: var(--cor3);
+    }
 }
 
 .hero {
@@ -108,88 +119,103 @@ header {
     background: var(--cor5);
     color: var(--cor6);
     text-align: center;
-    border-bottom: 1px solid var(--cor3);
-    box-shadow: 0 0 15px var(--cor4);
-    padding-bottom: 100px;
+    border-bottom: 0.1rem solid var(--cor3);
+    box-shadow: 0 0 1.5rem var(--cor4);
+    padding-bottom: 10rem;
     position: relative;
     z-index: 98;
 }
 
 .logo__hero {
-    width: 780px;
-    margin-top: 150px;
+    width: 78rem;
+    margin-top: 15rem;
     transition: 1s;
 }
 
-.logo__hero:hover {
-    filter: drop-shadow(0 0 15px var(--cor4));
+@media (hover: hover) {
+    .logo__hero:hover {
+        filter: drop-shadow(0 0 1.5rem var(--cor4));
+    }
 }
 
 h1 {
-    margin-bottom: 30px;
-    font-size: 28px;
+    margin-bottom: 3rem;
+    font-size: 2.8rem;
 }
 
 .hero__p {
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 1.5;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 }
 
-.link-projetos,
-.link-contato {
-    width: 200px;
-    height: 55px;
+.botao-primario,
+.botao-secundario {
+    width: 20rem;
+    height: 5.5rem;
     padding: 1em;
     display: inline-block;
-    border-radius: 8px;
-    font-size: 18px;
-    box-shadow: 0 0 0 3px transparent;
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    box-shadow: 0 0 0 0.3rem transparent;
     text-decoration: none;
     color: var(--cor6);
-    margin: 0 20px;
+    margin: 0 2rem;
     transition: 0.5s;
 }
 
-.link-projetos {
+.botao-primario {
     background: linear-gradient(270deg, var(--cor1), var(--cor4));
     background-size: 200% 200%;
     animation: gradientMove 5s ease infinite;
 }
 
-.link-projetos:hover {
-    box-shadow: 0 0 0 3px var(--cor5), 0 0 8px 8px var(--cor4);
+@media (hover: hover) {
+    .botao-primario:hover {
+        box-shadow: 0 0 0 0.3rem var(--cor5), 0 0 0.8rem 0.8rem var(--cor4);
+    }
 }
 
-.link-projetos:active,
-.link-contato:active {
-    transform: scale(0.95);
+@media (hover: hover) {
+    .botao-primario:active,
+    .botao-secundario:active {
+        transform: scale(0.95);
+    }
 }
 
-.link-contato {
-    box-shadow: inset 0 0 0 3px var(--cor4);
+.botao-secundario {
+    box-shadow: inset 0 0 0 0.3rem var(--cor4);
     background: linear-gradient(270deg, var(--cor5), var(--cor3));
     background-size: 200% 200%;
     animation: gradientMove 5s ease infinite;
 }
 
-.link-contato:hover {
-    box-shadow: inset 0 0 0 3px var(--cor5), 0 0 8px 8px var(--cor4);
+@media (hover: hover) {
+    .botao-secundario:hover {
+        box-shadow: inset 0 0 0 0.3rem var(--cor5), 0 0 0.8rem 0.8rem var(--cor4);
+    }
+}
+
+.sobre {
+    padding: 3rem;
+    background: var(--cor5);
+    position: relative;
+    z-index: 97;
 }
 
 .container,
 .cards {
     display: flex;
-    max-width: 1300px;
+    max-width: 130rem;
     margin: auto;
 }
 
 .imagem {
-    width: 400px;
-    height: 500px;
+    width: 40rem;
+    height: 50rem;
     align-items: center;
     justify-content: center;
-    margin: 80px 100px 80px 0;
+    margin: 8rem 10rem 8rem 0;
     flex-shrink: 0;
     /*impede q a largura seja alterada msm estando definida devido ao display flex*/
 }
@@ -197,41 +223,44 @@ h1 {
 .foto {
     width: 100%;
     height: 100%;
-    border: 2px solid transparent;
-    border-radius: 10px;
+    border: 0.2rem solid transparent;
+    border-radius: 1rem;
     background:
         linear-gradient(145deg, var(--cor1), var(--cor3), var(--cor4)) border-box;
     object-fit: cover;
-    box-shadow: 10px 10px 20px var(--cor4);
+    box-shadow: 1rem 1rem 2rem var(--cor4);
     transition: 0.5s;
 }
 
-.foto:hover {
-    box-shadow: -10px -10px 20px var(--cor1);
+@media (hover: hover) {
+     .foto:hover {
+        box-shadow: -1rem -1rem 2rem var(--cor1);
+    }   
 }
 
+
 .sobre__texto {
-    max-height: 500px;
+    max-height: 50rem;
     width: 100%;
     display: flex;
-    margin-top: 80px;
+    margin-top: 8rem;
     flex-direction: column;
 }
 
 h2 {
     font-family: var(--fonte2);
-    font-size: 20px;
+    font-size: 2rem;
     text-transform: uppercase;
     background: linear-gradient(to right, var(--cor1), var(--cor4) 15%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 h3 {
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
 }
 
 .destaque {
@@ -244,7 +273,7 @@ h3 {
 
 .sobre__p {
     display: flex;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 1.5;
     max-width: 55ch;
 }
@@ -259,36 +288,38 @@ h3 {
 .foco,
 .dedicacao,
 .desenvolvimento {
-    border-right: 1px solid var(--cor3);
-    padding-right: 50px;
+    border-right: 0.1rem solid var(--cor3);
+    padding-right: 5rem;
 }
 
 .fa-bullseye,
 .fa-bolt,
 .fa-code,
 .fa-user-group {
-    font-size: 40px;
-    padding: 10px 0 30px 0;
+    font-size: 4rem;
+    padding: 1rem 0 3rem 0;
 }
 
 .icones__h4 {
-    font-size: 18px;
-    margin-bottom: 12px;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
 }
 
 .icones__p {
-    line-height: 1.6
+    line-height: 1.6;
+    font-size: 1.6rem;
 }
 
 .card__imagem {
-    max-width: 400px;
+    max-width: 40rem;
     position: relative;
 }
 
-.secundaria,
+.sobre,
+.projetos,
 header {
-    border-bottom: 1px solid var(--cor3);
-    box-shadow: 0 0 15px var(--cor4);
+    border-bottom: 0.1rem solid var(--cor3);
+    box-shadow: 0 0 1.5rem var(--cor4);
 }
 
 
