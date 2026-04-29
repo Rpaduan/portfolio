@@ -371,7 +371,7 @@ h3 {
 }
 
 .projetos__links {
-    border: 1px solid red;
+    border: 1px solid white;
     display: flex;
     justify-content: space-between;
     margin: 2rem;
