@@ -341,9 +341,22 @@ h3 {
     color: var(--cor6);
 }
 
+.skills {
+    padding: 8rem;
+    background: var(--cor5);
+    position: relative;
+    z-index: 95;
+}
+
+.skills__container {
+    max-width: 130rem;
+    margin: auto;
+}
+
 header,
 .sobre,
-.projetos {
+.projetos,
+.skills {
     border-bottom: 0.1rem solid var(--cor3);
     box-shadow: 0 0 1.5rem var(--cor4);
 }
