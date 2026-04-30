@@ -10,22 +10,21 @@ html {
 
 :root {
     --cor1: #5BC0EB;
-    --cor2: #4A90E2;
-    --cor3: #7B61FF;
-    --cor4: #5A3FD0;
-    --cor5: #0B0B14;
-    --cor6: #ffffff;
-    --cor7: #ffff00;
-    --cor8: #111323;
+    --cor2: #7B61FF;
+    --cor3: #5A3FD0;
+    --cor4: #0B0B14;
+    --cor5: #ffffff;
+    --cor6: #ffff00;
+    --cor7: #111323;
     --fonte1: Arial, Helvetica, sans-serif;
     --fonte2: "Candal", sans-serif;
 }
 
 body {
-    background: var(--cor5);
+    background: var(--cor4);
     min-height: 100vh;
     font-family: var(--fonte1);
-    color: var(--cor6);
+    color: var(--cor5);
     font-size: 1.6rem;
 }
 
@@ -67,7 +66,7 @@ header {
 }
 
 .header__links a {
-    color: var(--cor6);
+    color: var(--cor5);
     font-weight: bold;
     text-decoration: underline;
     text-decoration-color: transparent;
@@ -88,17 +87,15 @@ header {
     text-underline-offset: 2.6rem;
     text-decoration-thickness: 0.3rem;
     font-size: 2rem;
-    color: var(--cor6);
+    color: var(--cor5);
     transition: 0.5s;
 }
 
 .hero {
     display: block;
-    background: var(--cor5);
-    color: var(--cor6);
+    background: var(--cor4);
+    color: var(--cor5);
     text-align: center;
-    border-bottom: 0.1rem solid var(--cor3);
-    box-shadow: 0 0 1.5rem var(--cor4);
     padding-bottom: 10rem;
     position: relative;
     z-index: 98;
@@ -132,27 +129,27 @@ header {
     font-size: 1.8rem;
     box-shadow: 0 0 0 0.3rem transparent;
     text-decoration: none;
-    color: var(--cor6);
+    color: var(--cor5);
     margin: 0 2rem;
     transition: 0.5s;
 }
 
 .botao-primario {
-    background: linear-gradient(270deg, var(--cor1), var(--cor4));
+    background: linear-gradient(270deg, var(--cor1), var(--cor3));
     background-size: 200% 200%;
     animation: gradientMove 5s ease infinite;
 }
 
 .botao-secundario {
-    box-shadow: inset 0 0 0 0.3rem var(--cor4);
-    background: linear-gradient(270deg, var(--cor5), var(--cor3));
+    box-shadow: inset 0 0 0 0.3rem var(--cor3);
+    background: linear-gradient(270deg, var(--cor4), var(--cor2));
     background-size: 200% 200%;
     animation: gradientMove 5s ease infinite;
 }
 
 .sobre {
     padding: 10rem 0;
-    background: var(--cor5);
+    background: var(--cor4);
     position: relative;
     z-index: 97;
 }
@@ -172,8 +169,8 @@ header {
     border-radius: 10px;
     border: 0.3rem solid transparent;
     background:
-        linear-gradient(145deg, var(--cor1), var(--cor3), var(--cor4)) border-box;
-    box-shadow: 1rem 1rem 2rem var(--cor4);
+        linear-gradient(145deg, var(--cor1), var(--cor2), var(--cor3)) border-box;
+    box-shadow: 1rem 1rem 2rem var(--cor3);
     overflow: hidden;
     flex-shrink: 0;
     /*impede q a largura seja alterada msm estando definida devido ao display flex*/
@@ -197,7 +194,7 @@ h2 {
     font-family: var(--fonte2);
     font-size: 2rem;
     text-transform: uppercase;
-    background: linear-gradient(to right, var(--cor1), var(--cor4) 15%);
+    background: linear-gradient(to right, var(--cor1), var(--cor3) 15%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -210,7 +207,7 @@ h3 {
 }
 
 .destaque {
-    background: linear-gradient(to right, var(--cor1), var(--cor4) 60%);
+    background: linear-gradient(to right, var(--cor1), var(--cor3) 60%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -234,7 +231,7 @@ h3 {
 .sobre__foco,
 .sobre__dedicacao,
 .sobre__desenvolvimento {
-    border-right: 0.1rem solid var(--cor3);
+    border-right: 0.1rem solid var(--cor2);
     padding-right: 5rem;
 }
 
@@ -259,7 +256,7 @@ h3 {
 
 .projetos {
     padding: 8rem;
-    background: var(--cor5);
+    background: var(--cor4);
     position: relative;
     z-index: 96;
 }
@@ -293,15 +290,15 @@ h3 {
 }
 
 .projetos__item {
-    border: 2px solid var(--cor2);
+    border: 2px solid var(--cor1);
     border-radius: 10px;
     max-width: 40rem;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 2rem var(--cor2);
+    box-shadow: 0 0 2rem var(--cor1);
     transition: 0.5s;
     overflow: hidden;
-    background: var(--cor8);
+    background: var(--cor7);
 }
 
 .projetos__img {
@@ -329,7 +326,7 @@ h3 {
     text-decoration: none;
     font-size: 2rem;
     font-weight: bold;
-    background: linear-gradient(to right, var(--cor1), var(--cor4) 60%);
+    background: linear-gradient(to right, var(--cor1), var(--cor3) 60%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -341,12 +338,12 @@ h3 {
 }
 
 .fa-github {
-    color: var(--cor6);
+    color: var(--cor5);
 }
 
 .skills {
     padding: 8rem;
-    background: var(--cor5);
+    background: var(--cor4);
     position: relative;
     z-index: 95;
 }
@@ -364,10 +361,10 @@ h3 {
 
 .skills__logo {
     text-align: center;
-    border: 1px solid var(--cor4);
+    border: 1px solid var(--cor3);
     border-radius: 10px;
     padding: 3rem;
-    background: var(--cor8);
+    background: var(--cor7);
     transition: .5s;
 }
 
@@ -376,39 +373,77 @@ h3 {
     margin-bottom: 1rem;
 }
 
+.contato {
+    padding: 8rem;
+    background: var(--cor4);
+    position: relative;
+    z-index: 94;
+}
+
+.contato__container {
+    display: flex;
+    max-width: 130rem;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contato__links {
+    width: 70rem;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.contato__botao {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--cor5);
+}
+
+footer {
+    display: flex;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/*efeito da borda e sombra inferior*/
 header,
+.hero,
 .sobre,
 .projetos,
-.skills {
-    border-bottom: 0.1rem solid var(--cor3);
-    box-shadow: 0 0 1.5rem var(--cor4);
+.skills,
+.contato {
+    border-bottom: 0.1rem solid var(--cor2);
+    box-shadow: 0 0 1.5rem var(--cor3);
 }
 
 /*efeito hover*/
 @media (hover: hover) {
     .header__rp:hover,
     .header__nome:hover {
-        filter: drop-shadow(0 0 5px var(--cor4));
+        filter: drop-shadow(0 0 5px var(--cor3));
     }
 
     .header__links a:hover {
         color: var(--cor1);
-        text-decoration-color: var(--cor3);
+        text-decoration-color: var(--cor2);
     }
 
     .fa-sun:hover {
-        color: var(--cor7);
+        color: var(--cor6);
         text-underline-offset: 2.6rem;
         text-decoration-thickness: 0.3rem;
-        text-decoration-color: var(--cor3);
+        text-decoration-color: var(--cor2);
     }
 
     .hero__logo:hover {
-        filter: drop-shadow(0 0 1.5rem var(--cor4));
+        filter: drop-shadow(0 0 1.5rem var(--cor3));
     }
 
     .botao-primario:hover {
-        box-shadow: 0 0 0 0.3rem var(--cor5), 0 0 0.8rem 0.8rem var(--cor4);
+        box-shadow: 0 0 0 0.3rem var(--cor4), 0 0 0.8rem 0.8rem var(--cor3);
     }
 
     .botao-primario:active,
@@ -417,7 +452,7 @@ header,
     }
 
     .botao-secundario:hover {
-        box-shadow: inset 0 0 0 0.3rem var(--cor5), 0 0 0.8rem 0.8rem var(--cor4);
+        box-shadow: inset 0 0 0 0.3rem var(--cor4), 0 0 0.8rem 0.8rem var(--cor3);
     }
 
     .sobre__imagem:hover {
@@ -426,21 +461,21 @@ header,
     
     .projetos__item:hover {
         transform: scale(1.05);
-        border: 2px var(--cor4);
+        border: 2px var(--cor3);
         box-shadow:
-            0 0 0 4px var(--cor4), 
-            0 0 5rem var(--cor4);
+            0 0 0 4px var(--cor3), 
+            0 0 5rem var(--cor3);
     }
 
     .projetos__ver:hover,
     .projetos__github:hover {
-        color: var(--cor7);
+        color: var(--cor6);
         text-shadow: 0 0 20px var(--cor1);
     }
 
     .skills__logo:hover {
-        background: var(--cor5);
-        box-shadow: 0 0 15px var(--cor6);
+        background: var(--cor4);
+        box-shadow: 0 0 15px var(--cor5);
     }
 
 }
@@ -452,7 +487,7 @@ h1,
 .fa-bolt,
 .fa-code,
 .fa-user-group {
-    background: linear-gradient(270deg, var(--cor1), var(--cor4));
+    background: linear-gradient(270deg, var(--cor1), var(--cor3));
     background-size: 200% 200%;
     background-clip: text;
     -webkit-background-clip: text;
