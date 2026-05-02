@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%; /* 1rem = 10px */
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -388,17 +389,23 @@ h3 {
     justify-content: space-between;
 }
 
+.contato__p {
+    font-size: 2rem;
+}
+
 .contato__links {
     width: 70rem;
     display: flex;
-    justify-content: space-between;
-   
+    justify-content: flex-end;
+    font-family: var(--fonte2);   
 }
 
 .contato__botao {
     font-size: 1.8rem;
     text-decoration: none;
     color: var(--cor5);
+    margin-left: 4rem;
+    transition: .5s;
 }
 
 footer {
@@ -406,6 +413,11 @@ footer {
     height: 10rem;
     justify-content: center;
     align-items: center;
+}
+
+.footer__img {
+    height: 2rem;
+    padding: 0 .5rem;
 }
 
 /*efeito da borda e sombra inferior*/
@@ -461,7 +473,7 @@ header,
     
     .projetos__item:hover {
         transform: scale(1.05);
-        border: 2px var(--cor3);
+        border: 2px solid var(--cor3);
         box-shadow:
             0 0 0 4px var(--cor3), 
             0 0 5rem var(--cor3);
@@ -476,6 +488,14 @@ header,
     .skills__logo:hover {
         background: var(--cor4);
         box-shadow: 0 0 15px var(--cor5);
+        cursor: pointer;
+    }
+
+    .contato__botao:hover {
+        transform: scale(1.5);
+        text-shadow: 
+            0 20px 0 var(--cor3),
+            0 -20px 0 var(--cor6);
     }
 
 }

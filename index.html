@@ -9,8 +9,8 @@
     <script src="https://kit.fontawesome.com/f840aaec68.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,17 +20,17 @@
             <img class="header__nome" src="assets/nome_600.png" alt="Renato Paduan">
         </div>
         <nav class="header__links">
-            <a href="#">Início</a>
-            <a href="#">Sobre</a>
+            <a href="#hero">Início</a>
+            <a href="#sobre">Sobre</a>
             <a href="#projetos">Projetos</a>
             <a href="#skills">Skills</a>
-            <a href="#">Contato</a>
+            <a href="#contato">Contato</a>
             <button class="header__light-dark" onclick=""><i class="fa-regular fa-sun"></i></button>
         </nav>
         <!--<i class="fa-regular fa-moon"></i>-->
     </header>
 
-    <section class="hero">
+    <section class="hero" id="hero">
         <div>
             <img class="hero__logo" src="assets/logo_completa_sem_fundo.png" alt="Logo Renato Paduan">
             <h1 class="hero__h1">Desenvolvedor Front-End</h1>
@@ -40,18 +40,21 @@
         </div>
     </section>
 
-    <section class="sobre">
+    <section class="sobre" id="sobre">
         <div class="sobre__container">
             <div class="sobre__imagem">
-                <img class="sobre__foto" src="assets/Gemini_Generated_Image_cv6av1cv6av1cv6a.png" alt="Foto de Renato Paduan">
+                <img class="sobre__foto" src="assets/Gemini_Generated_Image_xn88xvxn88xvxn88.png"
+                    alt="Foto de Renato Paduan">
             </div>
             <div class="sobre__texto">
                 <div>
                     <h2>Sobre Mim</h2>
                     <h3>Prazer, eu sou<br> <span class="destaque">Renato Paduan</span></h3>
-                    <p class="sobre__p">Estou em transição de carreira para a área de tecnologia, focado em desenvolvimento Front&#8209;End. Gosto de criar interfaces modernas e funcionais, sempre buscando aprender e evoluir.</p>
+                    <p class="sobre__p">Estou em transição de carreira para a área de tecnologia, focado em
+                        desenvolvimento Front&#8209;End. Gosto de criar interfaces modernas e funcionais, sempre
+                        buscando aprender e evoluir.</p>
                 </div>
-            
+
                 <div class="sobre__icones">
                     <div class="sobre__foco">
                         <i class="fa-solid fa-bullseye"></i>
@@ -78,7 +81,7 @@
         </div>
     </section>
 
-    <section class="projetos">
+    <section class="projetos" id="projetos">
         <div class="projetos__container">
             <div class="projetos__titulo">
                 <div class="projetos__texto">
@@ -89,20 +92,22 @@
                     <a class="botao-secundario" href="#">Ver todos</a>
                 </div>
             </div>
-    
+
             <div class="projetos__card">
                 <div class="projetos__item">
                     <img class="projetos__img" src="assets/nubank_clone.jpg" alt="">
                     <h4 class="projetos__h4">Nubank Clone</h4>
                     <p class="projetos__p">Clone da interface do Nubank usando apenas HTML e CSS.</p>
                     <div class="projetos__links">
-                        <a class="projetos__ver" href="https://nubank-clone-kohl.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <a class="projetos__ver" href="https://nubank-clone-kohl.vercel.app/" target="_blank"
+                            rel="noopener noreferrer">
                             <span class="projetos__icones">
                                 <i class="fa-solid fa-up-right-from-square"></i>
                             </span>
-                             <span>Ver Projeto</span>
+                            <span>Ver Projeto</span>
                         </a>
-                        <a class="projetos__github" href="https://github.com/Rpaduan/nubank-clone" target="_blank" rel="noopener noreferrer">
+                        <a class="projetos__github" href="https://github.com/Rpaduan/nubank-clone" target="_blank"
+                            rel="noopener noreferrer">
                             <span class="projetos__icones">
                                 <i class="fa-brands fa-github"></i>
                             </span>
@@ -110,19 +115,21 @@
                         </a>
                     </div>
                 </div>
-    
+
                 <div class="projetos__item">
                     <img class="projetos__img" src="assets/amnesia.jpg" alt="">
                     <h4 class="projetos__h4">Amnesia Store</h4>
                     <p class="projetos__p">Página estilo vitrine de produtos em impressão 3D.</p>
                     <div class="projetos__links">
-                        <a class="projetos__ver" href="https://rpaduan.github.io/amnesia/" target="_blank" rel="noopener noreferrer">
+                        <a class="projetos__ver" href="https://rpaduan.github.io/amnesia/" target="_blank"
+                            rel="noopener noreferrer">
                             <span class="projetos__icones">
                                 <i class="fa-solid fa-up-right-from-square"></i>
                             </span>
-                             <span>Ver Projeto</span>
+                            <span>Ver Projeto</span>
                         </a>
-                        <a class="projetos__github" href="https://github.com/Rpaduan/amnesia" target="_blank" rel="noopener noreferrer">
+                        <a class="projetos__github" href="https://github.com/Rpaduan/amnesia" target="_blank"
+                            rel="noopener noreferrer">
                             <span class="projetos__icones">
                                 <i class="fa-brands fa-github"></i>
                             </span>
@@ -130,19 +137,22 @@
                         </a>
                     </div>
                 </div>
-    
+
                 <div class="projetos__item">
                     <img class="projetos__img" src="assets/android.jpg" alt="">
                     <h4 class="projetos__h4">Android</h4>
                     <p class="projetos__p">Página desenvolvida com HTML, CSS e contendo responsividade.</p>
                     <div class="projetos__links">
-                        <a class="projetos__ver" href="https://rpaduan.github.io/estudos/meu-projeto-android/" target="_blank" rel="noopener noreferrer">
+                        <a class="projetos__ver" href="https://rpaduan.github.io/estudos/meu-projeto-android/"
+                            target="_blank" rel="noopener noreferrer">
                             <span class="projetos__icones">
                                 <i class="fa-solid fa-up-right-from-square"></i>
                             </span>
-                             <span>Ver Projeto</span>
+                            <span>Ver Projeto</span>
                         </a>
-                        <a class="projetos__github" href="https://github.com/Rpaduan/estudos/tree/main/meu-projeto-android" target="_blank" rel="noopener noreferrer">
+                        <a class="projetos__github"
+                            href="https://github.com/Rpaduan/estudos/tree/main/meu-projeto-android" target="_blank"
+                            rel="noopener noreferrer">
                             <span class="projetos__icones">
                                 <i class="fa-brands fa-github"></i>
                             </span>
@@ -154,7 +164,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="skills__container">
             <div class="skills__titulo">
                 <h2>Skills</h2>
@@ -189,38 +199,30 @@
         </div>
     </section>
 
-    <section class="contato">
+    <section class="contato" id="contato">
         <div class="contato__container">
             <div class="contato__titulo">
                 <h2>Contato</h2>
                 <h3>Vamos <span class="destaque">conversar?</span></h3>
-                <p>Estou aberto a novas oportunidades e projetos!</p>
+                <p class="contato__p">Estou aberto a novas oportunidades e projetos!</p>
             </div>
-                <div class="contato__links">
-                    <a class="contato__botao" href="mailto:renatosonne@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
-                    <a class="contato__botao" href="https://wa.me//5543996792175" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-                    <a class="contato__botao" href="https://www.linkedin.com/in/renato-paduan" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-linkedin"></i> Linkedin</a>
-                    <a class="contato__botao" href="https://github.com/Rpaduan" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
-                </div>
+            <div class="contato__links">
+                <a class="contato__botao" href="mailto:renatosonne@gmail.com"><i class="fa-solid fa-envelope"></i>
+                    Email</a>
+                <a class="contato__botao" href="https://wa.me//5543996792175?text=Olá Renato, vi seu portfólio!"
+                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                <a class="contato__botao" href="https://www.linkedin.com/in/renato-paduan" target="_blank"
+                    rel="noopener noreferrer"><i class="fa-brands fa-square-linkedin"></i> Linkedin</a>
+                <a class="contato__botao" href="https://github.com/Rpaduan" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-github"></i> GitHub</a>
+            </div>
         </div>
     </section>
 
     <footer>
-        Desenvolvido por Renato Paduan - 2026
+        Desenvolvido por <img class="footer__img" src="assets/logo_rp_sem_fundo_200x113.png" alt=""> Renato Paduan -
+        2026
     </footer>
+</body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
+</html>
