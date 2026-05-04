@@ -41,7 +41,8 @@ header {
 }
 
 .header__logo {
-    width: 90rem;
+    max-width: 90rem;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -287,15 +288,12 @@ h3 {
 .projetos__card {
     display: flex;
     justify-content: space-between;
-    font-size: 1.6rem;
 }
 
 .projetos__item {
     border: 2px solid var(--cor1);
     border-radius: 10px;
     max-width: 40rem;
-    justify-content: center;
-    align-items: center;
     box-shadow: 0 0 2rem var(--cor1);
     transition: 0.5s;
     overflow: hidden;
@@ -354,13 +352,21 @@ h3 {
     margin: auto;
 }
 
-.skills__card {
-    display: grid;
-    grid-template-columns: repeat(6, auto);
-    gap: 3rem;
+.skills__lista {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+li {
+    max-width: 18rem;
+    width: 100%;
+    
 }
 
 .skills__logo {
+    max-width: 18rem;
     text-align: center;
     border: 1px solid var(--cor3);
     border-radius: 10px;
