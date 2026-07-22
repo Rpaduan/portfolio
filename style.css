@@ -291,6 +291,8 @@ h3 {
 }
 
 .projetos__item {
+    display: flex;
+    flex-direction: column;
     border: 2px solid var(--cor1);
     border-radius: 10px;
     max-width: 40rem;
@@ -319,9 +321,13 @@ h3 {
     display: flex;
     justify-content: space-between;
     margin: 2rem;
+    margin-top: auto;
 }
 
 .projetos__links a {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
     text-decoration: none;
     font-size: 2rem;
     font-weight: bold;
